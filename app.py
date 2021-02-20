@@ -39,7 +39,8 @@ def predict():
 
       
     
-        rev , conf =(s.sentiment(data))
+        dtlc = data.lower()
+        rev , conf =(s.sentiment(dtlc))
         p_conf = conf * 100
                
         
